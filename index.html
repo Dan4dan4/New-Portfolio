@@ -57,38 +57,74 @@
 					</section>
 
 				<!-- Three -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Projects</h2>
-							<!-- <p>Projects done by me</p> -->
-						</div>
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Sol</h2>
-							<p>A dynamic trading application that offers real-time stock data and powerful tools for managing investments, ensuring an intuitive and efficient user experience.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image2">
-							<img src="images/gallery/thumbs/sol1.png" alt="" />
-						</div>
-					</section>
+				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+				<div class="content">
+				<h2>Sol</h2>
+				<p>A dynamic trading application that offers real-time stock data and powerful tools for managing investments, ensuring an intuitive and efficient user experience.</p>
+				<ul class="actions stacked">
+					<li><a href="#modal" class="button">Learn More</a></li>
+				</ul>
+				</div>
+				<div class="image2">
+				<img src="images/gallery/thumbs/sol1.png" alt="Sol Screenshot" />
+				</div>
+			</section>
+			</section>
+
+			<!-- Modal popup -->
+			<div id="modal" class="modal">
+			<div class="modal-content">
+				<a href="index.html" class="close">&times;</a>
+
+				<h2>Sol – Real-Time Stock Trading Platform</h2>
+				<ul>
+				<li><strong>Frontend:</strong> Built a dynamic, responsive interface using React and Redux with actions and thunks.</li>
+				<li><strong>Backend:</strong> Flask API with SQLAlchemy for database management.</li>
+				<li><strong>Data Integration:</strong> Populated 100+ stock tickers using Polygon.io API.</li>
+				<li><strong>Automation:</strong> APScheduler to refresh stock info multiple times per minute.</li>
+				</ul>
+			</div>
+			</div>
+
+			<a href="#" class="close">&times;</a>
+			<script>
+			document.querySelector('.close').addEventListener('click', function(e) {
+				e.preventDefault();
+				history.back(); // Removes the #modal from URL and closes the modal without jump
+			});
+			</script>
+
 					
 
 				<!-- Four -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Melody</h2>
-							<p>An engaging music application offering users a seamless experience for listening to and managing favorite tracks and albums.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image2">
-							<img src="images/gallery/thumbs/mel1.png" alt="" />
-						</div>
-					</section>
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+  <div class="content">
+    <h2>Melody</h2>
+    <p>An engaging music application offering users a seamless experience for listening to and managing favorite tracks and albums.</p>
+    <ul class="actions stacked">
+      <li><a href="#modal-melody" class="button">Learn More</a></li>
+    </ul>
+  </div>
+  <div class="image2">
+    <img src="images/gallery/thumbs/mel1.png" alt="Melody Screenshot" />
+  </div>
+</section>
+
+<!-- Melody Modal -->
+<div id="modal-melody" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">&times;</a>
+
+    <h2>Melody – Music Application Details</h2>
+    <ul>
+      <li>Crafted an interactive frontend using React hooks and built a Redux store, delivering a fluid, real-time music browsing experience with smooth transitions and dynamic content.</li>
+      <li>Built the backend with Flask and SQLAlchemy to efficiently handle music data, user preferences, and interactions within the app.</li>
+      <li>Collaborated with the team to create a custom music player (WaveSurfer) component on the frontend, enabling on-demand playback of music files stored in an AWS S3 bucket.</li>
+      <li>Optimized app performance by fine-tuning state management and database queries, ensuring a fast, responsive, and enjoyable streaming experience.</li>
+    </ul>
+  </div>
+</div>
+
 
 				<!-- Five -->
 					<!-- <section class="wrapper style1 align-center">
@@ -98,7 +134,7 @@
 						<!-- </div> -->
 
 						<!-- Gallery -->
-							<!-- <div class="gallery style2 medium lightbox onscroll-fade-in">
+							 <!-- <div class="gallery style2 medium lightbox onscroll-fade-in">
 								<article>
 								<a href="images/gallery/thumbs/sol1.png" class="image2">
 									<img src="images/gallery/thumbs/test4.png" alt="" />
@@ -148,7 +184,7 @@
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
-								</article> -->
+								</article> --> 
 								<!-- <article>
 									<a href="images/gallery/fulls/06.jpg" class="image">
 										<img src="images/gallery/thumbs/06.jpg" alt="" />
